@@ -1,4 +1,4 @@
-# Shopfully Fullstack test
+# Shop Fullstack test
 
 A small description about this test and the activities:
 
@@ -18,7 +18,7 @@ There is no routes module but only two routes with app.get in index.js
 #### Routes
 
 * <http://localhost:5000/>  
-    1. --> "Server shopfully is running" is OK
+    1. --> "Server shop is running" is OK
 * <http://localhost:8000/api/flyers?page=3&limit=100>
     1. --> serve the Json response from the ReadStream CSV file Flyers Data
     2. --> filters the data with some conditions and serve at least a number equal to "limit" records
@@ -43,14 +43,14 @@ A step by step guide that will tell you how to get the environment up and runnin
 
 ### for Backend
 
-* cd shopfully/BACKEND
+* cd shop/BACKEND
 * npm install
 * npm start
 server is now listening at <http://localhost:8000>
 
 ### for Frontend
 
-* cd shopfully
+* cd shop
 * npm install
 * npm run build
 * serve -s build
