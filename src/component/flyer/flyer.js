@@ -4,7 +4,7 @@ import ImageComponent from '../image/image';
 
 const Flyer = ({ flyer, modifyChoices }) => {
     const { retailer, title, category } = flyer;
-    let persistent = window.localStorage.getItem('shopfully_favourite')
+    let persistent = window.localStorage.getItem('projects_favourite')
     if (!persistent) {
 		persistent = []
 	} else {

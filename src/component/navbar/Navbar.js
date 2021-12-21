@@ -4,11 +4,11 @@ import './Navbar.css';
 
 const firmName = <div className=""
     style={{ marginTop: 'auto', marginLeft: '1.5rem' }}>
-    <span style={{ fontSize: 'xx-large', textColor: 'white' }}>ShopFully</span>
+    <span style={{ fontSize: 'xx-large', textColor: 'white' }}>WIM projects</span>
 </div>;
 
 const ShowFavourites = () => {
-    let persistent = window.localStorage.getItem('shopfully_favourite')
+    let persistent = window.localStorage.getItem('projects_favourite')
     if (!persistent) {
         return <div>No Favourites found</div>
     } else {

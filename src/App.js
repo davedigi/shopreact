@@ -6,7 +6,7 @@ import { isActive } from './component/actions/Favourite';
 
 function App() {
 
-	let persistent = window.localStorage.getItem('shopfully_favourite')
+	let persistent = window.localStorage.getItem('projects_favourite')
 	if (!persistent) {
 		persistent = []
 	} else {
@@ -45,9 +45,9 @@ function App() {
 				return {};
 		}
 		try {
-			window.localStorage.setItem('shopfully_favourite', JSON.stringify(newFavouriteFlyers))
+			window.localStorage.setItem('projects_favourite', JSON.stringify(newFavouriteFlyers))
 		} catch (error) {
-			console.error('ERROR window.localStorage.setItem(shopfully_favourite)', error)
+			console.error('ERROR window.localStorage.setItem(projects_favourite)', error)
 		}
 	};
 

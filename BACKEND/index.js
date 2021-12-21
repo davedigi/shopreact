@@ -42,13 +42,13 @@ var debugLogStream = fs.createWriteStream(path.join(__dirname + '/debug.log'), {
 app.use(morgan('combined', { stream: debugLogStream }))
 
 app.get('/', function (req, res) {
-    console.log('Server shopfully is running')
-    res.send('Server shopfully is running')
+    console.log('Server projects is running')
+    res.send('Server projects is running')
 })
 
-app.get("/api/flyers", (req, res) => {
+app.get("/api/projects", (req, res) => {
     try {
-        console.log('api flyers invoked with params ', req.query)
+        console.log('api projects invoked with params ', req.query)
         const page = parseInt(req.query.page)
         const limit = parseInt(req.query.limit)
         var rnum = 1, pushed = 0, valid = 0, discard = 0, packet = [];
